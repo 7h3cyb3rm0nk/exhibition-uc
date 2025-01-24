@@ -203,8 +203,12 @@ const questions = [
 
 export default function GandhiTimelineGame() {
   const [currentEventIndex, setCurrentEventIndex] = useState(0)
-  const [gamePhase, setGamePhase] = useState<"timeline" | "quiz" | "end">("timeline")
+  const [gamePhase, setGamePhase] = useState<"start" | "timeline" | "quiz" | "end">("start")
   const [score, setScore] = useState(0)
+
+  const changeToTimeline = () => {
+    setGamePhase("timeline")
+  }
 
   const handleNext = () => {
     if (currentEventIndex < events.length - 1) {
@@ -227,15 +231,31 @@ export default function GandhiTimelineGame() {
 
   const restartGame = () => {
     setCurrentEventIndex(0)
-    setGamePhase("timeline")
+    setGamePhase("start")
     setScore(0)
   }
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-8 bg-gray-100">
       <h1 className="text-4xl font-bold mb-8 text-center">Gandhi's Life Journey: An Interactive Timeline</h1>
-      <div className="w-full max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-8">
+      <AnimatePresence mode="wait">
+        {gamePhase === "start" && (
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 100 }}
+              transition={{ duration: 0.5 }}
+              
+            >
+            <div className = "flex justify-between  mx-auto w-fit ">
+              <Button className = "text-4xl py-8 px-4" onClick={changeToTimeline}>Start</Button>
+            </div>
+            </motion.div>
+          )}
+          </AnimatePresence>
+      <div className="w-full max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-8" hidden={gamePhase === "start"}>
         <AnimatePresence mode="wait">
+        
           {gamePhase === "timeline" && (
             <motion.div
               key={currentEventIndex}
@@ -270,6 +290,7 @@ export default function GandhiTimelineGame() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
+              
             >
               <GameEnd score={score} totalQuestions={questions.length} onRestart={restartGame} />
             </motion.div>
