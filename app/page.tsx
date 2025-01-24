@@ -14,7 +14,7 @@ const events = [
     description:
       "Mohandas Karamchand Gandhi is born on October 2nd in Porbandar, Gujarat, India. He is born into a Hindu merchant caste family. His father, Karamchand Gandhi, serves as the diwan (chief minister) of Porbandar state.",
     quote: "Where there is love there is life.",
-    image: "/placeholder.svg?height=300&width=400&text=Gandhi's+Birthplace",
+    image: "/porbandhar.jpg",
   },
   {
     year: 1883,
@@ -22,7 +22,7 @@ const events = [
     description:
       "At the age of 13, Gandhi is married to 14-year-old Kasturba Makhanji in an arranged marriage. Their marriage lasts for 62 years until Kasturba's death in 1944. Despite the early difficulties, their relationship grows to be one of mutual respect and support.",
     quote: "The weak can never forgive. Forgiveness is the attribute of the strong.",
-    image: "/placeholder.svg?height=300&width=400&text=Gandhi's+Marriage",
+    image: "/gandhi-and-kasturbah.jpg",
   },
   {
     year: 1888,
@@ -30,7 +30,7 @@ const events = [
     description:
       "Gandhi leaves for London to study law at the Inner Temple. This marks his first trip outside of India. In London, he faces numerous challenges, including adapting to Western customs while maintaining his vegetarian diet and Hindu beliefs.",
     quote: "Live as if you were to die tomorrow. Learn as if you were to live forever.",
-    image: "/placeholder.svg?height=300&width=400&text=Gandhi+in+London",
+    image: "/gandhiji-in-london.jpg",
   },
   {
     year: 1893,
@@ -38,7 +38,7 @@ const events = [
     description:
       "Gandhi arrives in South Africa to work as a lawyer for an Indian company. His experiences with racial discrimination in South Africa prove to be a turning point in his life, shaping his social activism and political views.",
     quote: "The best way to find yourself is to lose yourself in the service of others.",
-    image: "/placeholder.svg?height=300&width=400&text=Gandhi+in+South+Africa",
+    image: "/gandhiji-in-southafrica.jpg",
   },
   {
     year: 1906,
@@ -47,7 +47,7 @@ const events = [
       "Gandhi leads his first large-scale act of civil disobedience, called Satyagraha (truth-force), in South Africa. He and other Indians burn their identification cards to protest the Transvaal Asiatic Registration Act. This marks the beginning of his nonviolent resistance method.",
     quote:
       "A small body of determined spirits fired by an unquenchable faith in their mission can alter the course of history.",
-    image: "/placeholder.svg?height=300&width=400&text=Satyagraha+Movement",
+    image: "/satyagraha-in-southafrica.jpg",
   },
   {
     year: 1915,
@@ -55,7 +55,7 @@ const events = [
     description:
       "Gandhi returns to India after 21 years in South Africa. He is welcomed as a national hero. He joins the Indian National Congress and begins to play a significant role in the Indian independence movement.",
     quote: "Be the change that you wish to see in the world.",
-    image: "/placeholder.svg?height=300&width=400&text=Gandhi's+Return+to+India",
+    image: "/gandhiji-return-to-india.jpg",
   },
   {
     year: 1919,
@@ -63,7 +63,7 @@ const events = [
     description:
       "Gandhi organizes nationwide protests against the repressive Rowlatt Act, which allowed the British to imprison Indians without trial. This leads to the tragic Jallianwala Bagh massacre, where British troops kill hundreds of peaceful protesters.",
     quote: "An eye for an eye leaves the whole world blind.",
-    image: "/placeholder.svg?height=300&width=400&text=Rowlatt+Act+Protests",
+    image: "/rowlatt-act.jpg",
   },
   {
     year: 1920,
@@ -71,7 +71,7 @@ const events = [
     description:
       "Gandhi launches the Non-Cooperation Movement, calling for Indians to boycott British goods, institutions, and government positions. This mass civil disobedience campaign significantly challenges British colonial authority.",
     quote: "First they ignore you, then they laugh at you, then they fight you, then you win.",
-    image: "/placeholder.svg?height=300&width=400&text=Non-Cooperation+Movement",
+    image: "/non-cooperation.png",
   },
   {
     year: 1930,
@@ -79,7 +79,7 @@ const events = [
     description:
       "Gandhi leads the Salt March, a nonviolent protest against the British salt monopoly. He and his followers walk 240 miles to the sea to make their own salt. This act of civil disobedience sparks similar protests across India and becomes a pivotal moment in the independence movement.",
     quote: "In a gentle way, you can shake the world.",
-    image: "/placeholder.svg?height=300&width=400&text=Salt+March",
+    image: "/dandi-march.jpg",
   },
   {
     year: 1932,
@@ -87,7 +87,7 @@ const events = [
     description:
       "Gandhi begins a hunger strike to protest the British government's decision to separate electoral seats for untouchables. His actions lead to the Poona Pact, which ensures better representation for marginalized communities.",
     quote: "To other countries, I may go as a tourist, but to India, I come as a pilgrim.",
-    image: "/placeholder.svg?height=300&width=400&text=Hunger+Strike",
+    image: "/hunger-strike.jpg",
   },
   {
     year: 1942,
@@ -95,7 +95,7 @@ const events = [
     description:
       "Gandhi launches the Quit India Movement, demanding an immediate end to British rule in India. This leads to the arrest of Gandhi and other Congress leaders, but it also marks a turning point in the struggle for independence.",
     quote: "Freedom is not worth having if it does not include the freedom to make mistakes.",
-    image: "/placeholder.svg?height=300&width=400&text=Quit+India+Movement",
+    image: "/quit-india.jpg",
   },
   {
     year: 1944,
@@ -103,7 +103,7 @@ const events = [
     description:
       "Kasturba Gandhi dies in detention at the Aga Khan Palace in Pune, where she and Gandhi were imprisoned. Her death deeply affects Gandhi, who continues his struggle for independence while mourning his lifelong companion.",
     quote: "Love never claims, it ever gives.",
-    image: "/placeholder.svg?height=300&width=400&text=Kasturba's+Death",
+    image: "/kasturbah.jpg",
   },
   {
     year: 1947,
@@ -111,7 +111,7 @@ const events = [
     description:
       "India gains independence on August 15. While this is a moment of triumph, it's also marked by the partition of India and Pakistan, which deeply saddens Gandhi. He works tirelessly to promote peace between Hindus and Muslims during this tumultuous time.",
     quote: "The future depends on what you do today.",
-    image: "/placeholder.svg?height=300&width=400&text=Indian+Independence",
+    image: "/indian-independence.jpg",
   },
   {
     year: 1948,
@@ -119,7 +119,7 @@ const events = [
     description:
       "On January 30, Gandhi is assassinated in New Delhi by Nathuram Godse, a Hindu nationalist who opposed Gandhi's philosophy of nonviolence and his efforts to promote Hindu-Muslim unity. His death is mourned worldwide, and his legacy continues to inspire movements for civil rights and freedom across the globe.",
     quote: "My life is my message.",
-    image: "/placeholder.svg?height=300&width=400&text=Gandhi's+Assassination",
+    image: "/gandhi-assasination.jpg",
   }
 ];
 
